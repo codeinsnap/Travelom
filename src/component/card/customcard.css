@@ -1,0 +1,58 @@
+.hearticon {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+}
+
+.iconheart{
+    position: absolute;
+    margin-right: 3%;
+    margin-top: 3%;
+}
+.imageText{
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-top: -18% !important;
+    margin-bottom: 9% !important;
+    margin-left: 11% !important;
+    font-size: 100% !important
+}
+
+.textcontainer{
+    margin-left: 13%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.ratingcontainer{
+    background: #297cbb;
+    color: white;
+    padding: 1% !important;
+    padding-left: 3% !important;
+    padding-right: 3% !important;
+    border-radius: 6px;
+    width: 18%;
+    font-size: 78% !important;
+    display: flex;
+    justify-content: center;
+    margin-right: 6% !important;
+}
+.hotel-title{
+    font-weight: 500;
+    font-size: 1.23rem;
+    margin-bottom: 3%;
+}
+
+.card-title-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8%;
+}
+.review-container{
+    display: flex;
+}
+
+.star-container{
+    margin-bottom: 3%;
+}

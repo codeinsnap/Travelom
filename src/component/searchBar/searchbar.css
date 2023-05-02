@@ -1,0 +1,10 @@
+.search-card{
+    width: 85%;
+    background-color: rgb(255, 255, 255) !important;
+    box-shadow: 0px 0px 100px rgb(160, 160, 160) !important;
+    display: flex
+}
+
+.search-content{
+    display: flex;
+}

@@ -1,0 +1,92 @@
+.main-home-page{
+    background-image: url(../img/1920x800/img2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    text-align: center !important;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100vh;
+}
+
+.second-home-page{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -3.8%;
+    margin-bottom: 3%
+}
+
+.popularHotel{
+    margin-bottom: 3% !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.popularHotel::after{
+    display: block;
+    width: 2.5rem;
+    height: 0.125rem;
+    background-color: #297cbb;
+    content: " ";
+    margin: 1.5rem auto 0;
+}
+
+
+.image-container-second{
+    background-image: url(../img/1920x500/img4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    text-align: center !important;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 80vh;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.learnmorebutton:hover{
+    background-color: white !important;
+    color: black !important;
+    margin-top: -1%;
+}
+
+.learnmorebutton{
+    color: white !important;
+    border-color: white !important;
+    padding: 3% 11% !important
+}
+
+.footer-title{
+    margin: 8% 0 !important;
+    font-size: 1.1rem !important;
+}
+
+.footer-links{
+    font-size: 1.1rem !important;
+    margin-top: 8% !important;
+    color: rgb(109, 109, 109);
+}
+
+.footer-title-temp{
+    font-size: 1.1rem !important;
+    color: rgb(109, 109, 109);
+}
+
+.footer-links-mail{
+    font-size: 1.1rem !important;
+    margin-top: 3% !important;
+    color: rgb(109, 109, 109);
+}
