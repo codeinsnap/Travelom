@@ -1,0 +1,18 @@
+.testimonials-grid-container {
+    display: flex;
+    justify-content: center;
+}
+
+.testimonials-grid-one {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+}
+
+.testimonial-title{
+    margin: 2% 0 !important
+}
+.testimonial-paragraph{
+    text-align: center;
+    margin: 2% 0 !important;
+}

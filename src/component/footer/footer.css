@@ -1,0 +1,37 @@
+.footer-title{
+    margin: 8% 0 !important;
+    font-size: 1.1rem !important;
+}
+
+.footer-links{
+    font-size: 1.1rem !important;
+    margin-top: 8% !important;
+    color: rgb(109, 109, 109);
+}
+
+.footer-title-temp{
+    font-size: 1.1rem !important;
+    color: rgb(109, 109, 109);
+}
+
+.footer-links-mail{
+    font-size: 1.1rem !important;
+    margin-top: 3% !important;
+    color: rgb(109, 109, 109);
+}
+
+.footer-bottom-one-text{
+    color: #656565;
+}
+
+.footer-copyright-text{
+    display: flex;
+    align-items: center;
+    color: rgb(109, 109, 109);
+    padding-left: 4%;
+    padding-bottom: 2%;
+}
+
+.footer-subscribe-button{
+    font-size: x-small !important;
+}

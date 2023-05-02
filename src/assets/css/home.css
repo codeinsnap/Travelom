@@ -68,25 +68,3 @@
     border-color: white !important;
     padding: 3% 11% !important
 }
-
-.footer-title{
-    margin: 8% 0 !important;
-    font-size: 1.1rem !important;
-}
-
-.footer-links{
-    font-size: 1.1rem !important;
-    margin-top: 8% !important;
-    color: rgb(109, 109, 109);
-}
-
-.footer-title-temp{
-    font-size: 1.1rem !important;
-    color: rgb(109, 109, 109);
-}
-
-.footer-links-mail{
-    font-size: 1.1rem !important;
-    margin-top: 3% !important;
-    color: rgb(109, 109, 109);
-}
