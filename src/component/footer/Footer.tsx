@@ -7,6 +7,7 @@ import './footer.css'
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import CopyrightIcon from '@mui/icons-material/Copyright';
+import mytravelicon from '../../assets/fonts/travelicon.svg'
 const Footer = () => {
     return (
         <>
@@ -130,23 +131,25 @@ const Footer = () => {
                 sx={{
                     display: "flex",
                     justifyContent: "center",
-                    alignItems: "baseline",
+                    alignItems: "center",
+                    marginBottom: "2%",
+                    marginTop: "0%"
                 }}
             >
                 <Grid
                     item
                     xs={6}
+                    sx={{paddingTop:"1% !important"}}
                 >
-                    <Typography className="footer-bottom-one-text" fontSize={35}>
+                    <Typography className="footer-bottom-one-text" fontSize={35} style={{ display: 'flex', alignItems: 'center'}}>
+                        <img src={mytravelicon} style={{width:'10%', marginRight: '2%'}}/>
                         MyTravel
                     </Typography>
                 </Grid>
                 <Grid
                     item
                     xs={5}
-                    sx={{
-                        display: "flex",
-                    }}
+                    sx={{ display: "flex", paddingTop:"1% !important"}}
                 >
                     <Select
                         value={10}
