@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import CustomCard from "../../component/card/CustomCard";
 import "./carousel.css";
@@ -7,7 +7,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
-
 
 const handleSpaceBetween = (val: any) => {
   if (window.screen.width <= 600) {
@@ -32,9 +31,8 @@ const Carousel = (props: any) => {
     spaceBetween,
     slidesPerView,
     onSlideChange,
-    onSwiper,
     list,
-    cardChange,
+    cardTextContent
   } = props;
   return (
     <>
@@ -49,7 +47,11 @@ const Carousel = (props: any) => {
       >
         {list?.map((data: any, index: any) => (
           <SwiperSlide key={index}>
-            <CustomCard cardData={data} onChange={cardChange} />
+            <CustomCard 
+              cardData={data} 
+              cardImage={data.image}
+              cardTextContent={cardTextContent}
+              />
           </SwiperSlide>
         ))}
       </Swiper>

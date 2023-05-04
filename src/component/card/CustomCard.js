@@ -3,7 +3,6 @@ import { Card, CardContent } from "@mui/material";
 import "swiper/css";
 import Typography from "@mui/material/Typography";
 import StarIcon from "@mui/icons-material/Star";
-import test from "../../assets/img/300x230/img9.jpg";
 import PlaceIcon from "@mui/icons-material/Place";
 import StarBorderIcon from "@mui/icons-material/StarBorder";
 import "./customcard.css";
@@ -31,31 +30,31 @@ function CustomStar(props) {
 }
 
 const CustomCard = (props) => {
-  const { cardData, cardChange } = props;
+  const { cardData, cardImage, cardTextContent } = props;
   return (
     <Card>
       <CardContent sx={{ padding: 0 }}>
         <div className="imageicon">
           <CustomHeartIcon />
-          <img src={test} width={"100%"} />
-          <Typography className="imageText">
+          <img src={cardImage} width={"100%"} />
+          {cardTextContent && (<Typography className="imageText">
             <PlaceIcon fontSize="large" sx={{ fontSize: "28px" }} />
-            Istanbul, Turkey
-          </Typography>
+            {cardData.location}
+          </Typography>)}
         </div>
-        <div className="textcontainer">
-            <div className="star-container">
-              <CustomStar value={5} />
-            </div>
+        {cardTextContent && (<div className="textcontainer">
+          <div className="star-container">
+            <CustomStar value={5} />
+          </div>
           <div className="card-title-container">
-            <span className="hotel-title"> New York Marriott Downtown </span>
+            <span className="hotel-title">{cardData.hotelName}</span>
             <div className="review-container">
               <Typography className="ratingcontainer">4.6/5</Typography>
               <span> (166 reviews) </span>
             </div>
           </div>
-          <div className="tweet_container">From $899.00 / night</div>
-        </div>
+          <div className="tweet_container">{cardData.price}</div>
+        </div>)}
       </CardContent>
     </Card>
   );
