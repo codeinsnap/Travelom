@@ -8,6 +8,50 @@ import CustomCard from "../card/CustomCard";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import './tablistview.css'
+import homesliderimage from "../../assets/img/300x230/img9.jpg";
+
+const list = [
+  {
+    location: "Istanbul, Turkey",
+    rating: "5",
+    hotelName: "New York Marriott Downtown",
+    reviews: [],
+    price: "899.00 / night",
+    image: homesliderimage
+  },
+  {
+    location: "Istanbul, Turkey",
+    rating: "5",
+    hotelName: "New York Marriott Downtown",
+    reviews: [],
+    price: "899.00 / night",
+    image: homesliderimage
+  },
+  {
+    location: "Istanbul, Turkey",
+    rating: "5",
+    hotelName: "New York Marriott Downtown",
+    reviews: [],
+    price: "899.00 / night",
+    image: homesliderimage
+  },
+  {
+    location: "Istanbul, Turkey",
+    rating: "5",
+    hotelName: "New York Marriott Downtown",
+    reviews: [],
+    price: "899.00 / night",
+    image: homesliderimage
+  },
+  {
+    location: "Istanbul, Turkey",
+    rating: "5",
+    hotelName: "New York Marriott Downtown",
+    reviews: [],
+    price: "899.00 / night",
+    image: homesliderimage
+  }
+];
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -19,37 +63,23 @@ const Item = styled(Paper)(({ theme }) => ({
 
 function CardFive() {
   return (
-      <Grid
-        container
-        spacing={4}
-        sx={{ display: "flex", justifyContent: "center" }}
-      >
-        <Grid item xs={2} >
-          <div  className="tablist-card">
-          <CustomCard/>
+    <Grid
+      container
+      spacing={4}
+      sx={{ display: "flex", justifyContent: "center" }}
+    >
+      {list.map((item: any, index: number) => (
+        <Grid item xs={2} key={index}>
+          <div className="tablist-card">
+            <CustomCard
+              cardData={item}
+              cardImage={homesliderimage}
+              cardTextContent={true}
+            />
           </div>
         </Grid>
-        <Grid item xs={2}>
-        <div  className="tablist-card">
-          <CustomCard />
-        </div>
-        </Grid>
-        <Grid item xs={2}>
-        <div  className="tablist-card">
-          <CustomCard />
-        </div>
-        </Grid>
-        <Grid item xs={2}>
-          <div  className="tablist-card">
-          <CustomCard />
-        </div>
-        </Grid>
-        <Grid item xs={2}>
-          <div  className="tablist-card">
-          <CustomCard />
-        </div>
-        </Grid>
-      </Grid>
+      ))}
+    </Grid>
   );
 }
 

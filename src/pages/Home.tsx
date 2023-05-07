@@ -7,6 +7,8 @@ import RandomCard from "../component/randomCard/RandomCard";
 import TabListView from "../component/tablistview/TabListView";
 import Button from "@mui/material/Button";
 import Testimonials from "../component/testimonials/Testimonials";
+import homesliderimage from "../assets/img/300x230/img9.jpg";
+
 
 const list = [
   {
@@ -15,6 +17,7 @@ const list = [
     hotelName: "New York Marriott Downtown",
     reviews: [],
     price: "899.00 / night",
+    image: homesliderimage
   },
   {
     location: "Istanbul, Turkey",
@@ -22,6 +25,7 @@ const list = [
     hotelName: "New York Marriott Downtown",
     reviews: [],
     price: "899.00 / night",
+    image: homesliderimage
   },
   {
     location: "Istanbul, Turkey",
@@ -29,6 +33,7 @@ const list = [
     hotelName: "New York Marriott Downtown",
     reviews: [],
     price: "899.00 / night",
+    image: homesliderimage
   },
   {
     location: "Istanbul, Turkey",
@@ -36,6 +41,7 @@ const list = [
     hotelName: "New York Marriott Downtown",
     reviews: [],
     price: "899.00 / night",
+    image: homesliderimage
   },
   {
     location: "Istanbul, Turkey",
@@ -43,6 +49,7 @@ const list = [
     hotelName: "New York Marriott Downtown",
     reviews: [],
     price: "899.00 / night",
+    image: homesliderimage
   },
   {
     location: "Istanbul, Turkey",
@@ -50,6 +57,7 @@ const list = [
     hotelName: "New York Marriott Downtown",
     reviews: [],
     price: "899.00 / night",
+    image: homesliderimage
   },
   {
     location: "Istanbul, Turkey",
@@ -57,6 +65,7 @@ const list = [
     hotelName: "New York Marriott Downtown",
     reviews: [],
     price: "899.00 / night",
+    image: homesliderimage
   },
   {
     location: "Istanbul, Turkey",
@@ -64,9 +73,9 @@ const list = [
     hotelName: "New York Marriott Downtown",
     reviews: [],
     price: "899.00 / night",
+    image: homesliderimage
   },
 ];
-
 const Home = () => {
   return (
     <div>
@@ -98,7 +107,12 @@ const Home = () => {
         <Typography variant="h4" component="h2" className="popularHotel">
           Most Popular Hotels
         </Typography>
-        <Carousel list={list} spaceBetween={25} slidesPerView={5} />
+        <Carousel
+          list={list}
+          spaceBetween={25}
+          slidesPerView={5}
+          cardTextContent={true}
+        />
       </div>
 
       {/* Popular Destination */}
@@ -150,7 +164,7 @@ const Home = () => {
         <Typography variant="h4" component="h2" className="popularHotel">
           Why Choose
         </Typography>
-        <Testimonials/>
+        <Testimonials />
       </div>
     </div>
   );

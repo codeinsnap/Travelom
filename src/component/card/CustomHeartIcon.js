@@ -6,7 +6,7 @@ const CustomHeartIcon = () => {
     const [state, setState] = useState(false)
     return (
         <div className="hearticon">
-            {state ?  <FavoriteIcon className='iconheart' onClick={() => setState(!state)} /> : <FavoriteBorderIcon className='iconheart' onClick={() => setState(!state)}/> }
+            {state ? <FavoriteIcon className='iconheart' onClick={() => setState(!state)} /> : <FavoriteBorderIcon className='iconheart' onClick={() => setState(!state)} />}
         </div>
     )
 }
