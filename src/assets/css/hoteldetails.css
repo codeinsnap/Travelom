@@ -1,3 +1,19 @@
-.cardimage{
-    margin-bottom:-3.5%;
+.cardimage {
+    margin-bottom: -3.5%;
+}
+
+
+.singleHotel-room-card {
+    display: flex;
+    margin-bottom: 4%;
+    justify-content: space-between;
+}
+
+.singleHotel-room-card-image {
+    margin-right: 4%;
+}
+.singleHotel-room-card-middle-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

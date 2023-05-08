@@ -11,6 +11,11 @@ import Button from "@mui/material/Button";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import { Typography } from "@mui/material";
+import selectroomimg from '../assets/img/200x154/img1.jpg'
+import BedIcon from '@mui/icons-material/Bed';
+import WifiIcon from '@mui/icons-material/Wifi';
+import BathtubIcon from '@mui/icons-material/Bathtub';
+import AspectRatioIcon from '@mui/icons-material/AspectRatio';
 
 const list = [
   {
@@ -104,6 +109,10 @@ const HotelDetails = () => {
           />
           <GradientOpacityDiv />
           <hr color="#b9b9b9" style={{ opacity: "0.2" }} />
+          <Typography gutterBottom variant="h5" component="div">
+            Select Your Room
+          </Typography>
+          <HotelRoomSelect />
         </Grid>
         <Grid item xs={3}>
           xyz
@@ -114,6 +123,53 @@ const HotelDetails = () => {
 };
 
 export default HotelDetails;
+
+const HotelRoomSelect = () => {
+  const listRandom = [1, 2]
+  return (<>
+    {listRandom.map((item: any) => (
+      <Card className="singleHotel-room-card" key={item}>
+        <div style={{ display: "flex", width: "70%" }}>
+          <img className="singleHotel-room-card-image" src={selectroomimg} />
+          <div className="singleHotel-room-card-middle-div">
+            <Typography component="div">
+              Deluxe Twin Room
+            </Typography>
+            <div>
+              <Grid item xs={12} display={'flex'} marginBottom={'4%'}>
+                <Typography>
+                  <WifiIcon /> Free Wi-Fi
+                </Typography>
+                <Typography>
+                  <BedIcon /> 2 single beds
+                </Typography>
+              </Grid>
+              <Grid item xs={12} display={'flex'}>
+                <Typography>
+                  <AspectRatioIcon /> 15 m2
+                </Typography>
+                <Typography>
+                  <BathtubIcon /> Shower and Bathtub
+                </Typography>
+              </Grid>
+            </div>
+            <Typography>
+              Room Photos and Details
+            </Typography>
+          </div>
+        </div>
+        <div>
+          <Typography component="div">
+            Todays best offer
+          </Typography>
+          <Typography component="div">
+            from 899 / night
+          </Typography>
+          <Button variant="outlined" >Book Now</Button>
+        </div>
+      </Card>
+    ))}</>)
+}
 
 const GradientOpacityDiv = () => {
   const [isOpaque, setIsOpaque] = useState(false);
