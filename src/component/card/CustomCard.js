@@ -36,7 +36,7 @@ const CustomCard = (props) => {
       <CardContent sx={{ padding: 0 }}>
         <div className="imageicon">
           <CustomHeartIcon />
-          <img src={cardImage} width={"100%"} />
+          <img src={cardImage} className="cardimage" width={"100%"} />
           {cardTextContent && (<Typography className="imageText">
             <PlaceIcon fontSize="large" sx={{ fontSize: "28px" }} />
             {cardData.location}
