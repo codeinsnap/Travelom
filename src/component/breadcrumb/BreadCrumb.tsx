@@ -18,7 +18,7 @@ const BreadCrumb = (props: any) => {
         }) : ''
     }
     return (
-        <Stack spacing={2}>
+        <Stack spacing={2} style={{marginLeft:"10%"}}>
             <Breadcrumbs
                 separator={<NavigateNextIcon fontSize="small" />}
                 aria-label="breadcrumb"
