@@ -66,7 +66,7 @@ const NavigationBar = () => {
         <div>
         <hr color="gray" style={{ opacity: "0.3"}} />
         </div>
-        <Toolbar style={{ display: "flex", justifyContent: "space-evenly", paddingBottom:"1%" }}>
+        <Toolbar style={{ display: "flex", justifyContent: "space-evenly", paddingBottom:"1%", flexWrap: 'wrap' }}>
           <Typography fontSize={35} style={{ display: 'flex', alignItems: 'center', color: "black", width: "15%" }}>
             <img src={mytravelicon} style={{ width: '100%', marginRight: '2%' }} />
             MyTravel

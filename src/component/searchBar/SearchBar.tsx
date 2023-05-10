@@ -12,46 +12,48 @@ import SearchIcon from "@mui/icons-material/Search";
 
 const SearchBar = () => {
   return (
-    <Card className="search-card" style={{padding:"1%"}}>
-          <Grid container spacing={3} style={{display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-evenly'}}>
-            <Grid item xs={3}>
-              <Typography variant="h6" component="h4">
-                Destination or Hotel Name
-              </Typography>
-              <TextField
-                id="standard-basic"
-                label="Where you are going ?"
-                variant="standard"
-              />
-            </Grid>
-            <Grid item xs={3}>
-              <Typography variant="h6" component="h4">
-                Check In - Out
-              </Typography>
-              <TextField
-                id="standard-basic"
-                label="Standard"
-                variant="standard"
-              />
-            </Grid>
-            <Grid item xs={3}>
-              <Typography variant="h6" component="h4">
-                Rooms and Guests
-              </Typography>
-              <TextField
-                id="standard-basic"
-                label="Standard"
-                variant="standard"
-              />
-            </Grid>
-            <Grid item xs={1}>
-              <Button variant="contained">
-                <SearchIcon /> Search
-              </Button>
-            </Grid>
-          </Grid>
+    <Card className="search-card" style={{ padding: "1%" }}>
+      <Grid container spacing={3} style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-evenly'
+      }}>
+        <Grid item xs={3}>
+          <Typography variant="h6" component="h4">
+            Destination or Hotel Name
+          </Typography>
+          <TextField
+            id="standard-basic"
+            label="Where you are going ?"
+            variant="standard"
+          />
+        </Grid>
+        <Grid item xs={3}>
+          <Typography variant="h6" component="h4">
+            Check In - Out
+          </Typography>
+          <TextField
+            id="standard-basic"
+            label="Standard"
+            variant="standard"
+          />
+        </Grid>
+        <Grid item xs={3}>
+          <Typography variant="h6" component="h4">
+            Rooms and Guests
+          </Typography>
+          <TextField
+            id="standard-basic"
+            label="Standard"
+            variant="standard"
+          />
+        </Grid>
+        <Grid item xs={1}>
+          <Button variant="contained">
+            <SearchIcon /> Search
+          </Button>
+        </Grid>
+      </Grid>
     </Card>
   );
 };
