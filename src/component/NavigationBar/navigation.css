@@ -33,6 +33,19 @@
     margin-left: 1%;
 }
 
+.appBar {
+    transition: transform 01s !important;
+    background-color: white;
+    padding: 1%
+  }
+.appBarVisible {
+    transform: translateY(0) !important
+  }
+
+.appBarHidden {
+    transform: translateY(-100%) !important
+  }
+
 @media screen and (max-width: 600px) and (min-width: 370px) {
 
     .right-child-container,

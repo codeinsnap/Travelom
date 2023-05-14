@@ -9,20 +9,20 @@ import Button from "@mui/material/Button";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import { Typography } from "@mui/material";
-import selectroomimg from '../assets/img/200x154/img1.jpg'
+import selectroomimg from "../assets/img/200x154/img1.jpg";
 import "../assets/css/hoteldetails.css";
-import AspectRatioIcon from '@mui/icons-material/AspectRatio';
+import AspectRatioIcon from "@mui/icons-material/AspectRatio";
 
-import BathtubIcon from '@mui/icons-material/Bathtub';
-import BedIcon from '@mui/icons-material/Bed';
-import WifiIcon from '@mui/icons-material/Wifi';
-import AcUnitIcon from '@mui/icons-material/AcUnit';
-import CallIcon from '@mui/icons-material/Call';
-import LunchDiningIcon from '@mui/icons-material/LunchDining';
-import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
-import LocalLaundryServiceIcon from '@mui/icons-material/LocalLaundryService';
-import WineBarIcon from '@mui/icons-material/WineBar';
-import ChairIcon from '@mui/icons-material/Chair';
+import BathtubIcon from "@mui/icons-material/Bathtub";
+import BedIcon from "@mui/icons-material/Bed";
+import WifiIcon from "@mui/icons-material/Wifi";
+import AcUnitIcon from "@mui/icons-material/AcUnit";
+import CallIcon from "@mui/icons-material/Call";
+import LunchDiningIcon from "@mui/icons-material/LunchDining";
+import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
+import LocalLaundryServiceIcon from "@mui/icons-material/LocalLaundryService";
+import WineBarIcon from "@mui/icons-material/WineBar";
+import ChairIcon from "@mui/icons-material/Chair";
 import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
 
@@ -98,18 +98,35 @@ const HotelDetails = () => {
     <Box className="hoteldetails-main" sx={{ flexGrow: 1, paddingTop: "12%" }}>
       <BreadCrumb data={[{ title: "Home", link: "/" }, { title: "Hotels" }]} />
       <hr color="#b9b9b9" style={{ opacity: "0.2" }} />
-      <div className="hotel-location-container">
-        <div className="hotel-location-container-wrapper">
-          <Typography className="hotel-location-container-wrapper-text" sx={{ backgroundColor: "rgb(204, 167, 0)"}}>Newly Renovated</Typography>
-          <Typography className="hotel-location-container-wrapper-text" sx={{ backgroundColor: "rgb(121, 0, 0)" }}>Free Wifi</Typography>
-        </div>
-        <Typography variant="h5" component="div">Park Avenue Baker Street London</Typography>
-        <Typography>
-          Greater London, United Kingdom - View on map
-        </Typography>
-      </div>
+
       <Grid container spacing={3}>
-        <Grid item xs={8} style={{ marginLeft: "10%" }}>
+        <Grid item xs={8} style={{ marginLeft: "7%" }}>
+          <div className="hotel-location-container">
+            <div className="hotel-location-container-wrapper">
+              <Typography
+                className="hotel-location-container-wrapper-text"
+                sx={{ backgroundColor: "#f8bd5b" }}
+              >
+                Newly Renovated
+              </Typography>
+              <Typography
+                className="hotel-location-container-wrapper-text"
+                sx={{ backgroundColor: "#c72f74" }}
+              >
+                Free Wifi
+              </Typography>
+            </div>
+            <Typography
+              className="hotel-location-container-title"
+              variant="h5"
+              component="div"
+            >
+              Park Avenue Baker Street London
+            </Typography>
+            <Typography className="hotel-location-container-locationarea">
+              Greater London, United Kingdom - View on map
+            </Typography>
+          </div>
 
           <Carousel
             list={list}
@@ -117,12 +134,20 @@ const HotelDetails = () => {
             slidesPerView={1}
             cardTextContent={false}
           />
+
+
           <GradientOpacityDiv />
+
+
           <hr color="#b9b9b9" style={{ opacity: "0.2" }} />
-          <Typography gutterBottom variant="h5" component="div">
+
+
+          <Typography gutterBottom variant="h5" component="div" style={{margin:"3% 0"}}>
             Select Your Room
           </Typography>
           <HotelRoomSelect />
+
+
           <Amenities />
           <GradientOpacityDiv />
           <GradientOpacityDiv />
@@ -131,12 +156,10 @@ const HotelDetails = () => {
         <Grid item xs={2}>
           <Card className="singleHotel-room-search">
             <Typography variant="h6" component="h4">
-              From  $350.00 / night
+              From $350.00 / night
             </Typography>
             <div className="singleHotel-room-search-div">
-              <Typography component="h4">
-                Check In - Out
-              </Typography>
+              <Typography component="h4">Check In - Out</Typography>
               <TextField
                 id="standard-basic"
                 label="Standard"
@@ -144,9 +167,7 @@ const HotelDetails = () => {
               />
             </div>
             <div className="singleHotel-room-search-div">
-              <Typography component="h4">
-                Rooms and Guests
-              </Typography>
+              <Typography component="h4">Rooms and Guests</Typography>
               <TextField
                 id="standard-basic"
                 label="Standard"
@@ -166,51 +187,46 @@ const HotelDetails = () => {
 export default HotelDetails;
 
 const HotelRoomSelect = () => {
-  const listRandom = [1, 2]
-  return (<>
-    {listRandom.map((item: any) => (
-      <Card className="singleHotel-room-card" key={item}>
-        <div style={{ display: "flex", width: "70%" }}>
-          <img className="singleHotel-room-card-image" src={selectroomimg} />
-          <div className="singleHotel-room-card-middle-div">
-            <Typography component="div">
-              Deluxe Twin Room
-            </Typography>
-            <div>
-              <Grid item xs={12} display={'flex'} marginBottom={'4%'}>
-                <Typography>
-                  <WifiIcon /> Free Wi-Fi
-                </Typography>
-                <Typography>
-                  <BedIcon /> 2 single beds
-                </Typography>
-              </Grid>
-              <Grid item xs={12} display={'flex'}>
-                <Typography>
-                  <AspectRatioIcon /> 15 m2
-                </Typography>
-                <Typography>
-                  <BathtubIcon /> Shower and Bathtub
-                </Typography>
-              </Grid>
+  const listRandom = [1, 2, 3];
+  return (
+    <>
+      {listRandom.map((item: any) => (
+        <Card className="singleHotel-room-card" key={item}>
+          <div style={{ display: "flex", width: "80%" }}>
+            <img className="singleHotel-room-card-image" src={selectroomimg} />
+            <div className="singleHotel-room-card-middle-div">
+              <Typography component="div">Deluxe Twin Room</Typography>
+              <div style={{display:"flex"}}>
+                <Grid item xs={15} marginBottom={"4%"}>
+                  <Typography style={{display: 'flex',  marginRight:"4%"}}>
+                    <WifiIcon style={{marginRight:"8px", color:"blue"}}/> Free Wi-Fi
+                  </Typography>
+                  <Typography style={{display: 'flex'}}>
+                    <BedIcon style={{marginRight:"8px", color:"blue"}} /> 2 single beds
+                  </Typography>
+                </Grid>
+                <Grid item xs={18}>
+                  <Typography style={{display: 'flex', marginRight:"4%"}}>
+                    <AspectRatioIcon style={{marginRight:"8px", color:"blue"}}/> 15 m2
+                  </Typography>
+                  <Typography style={{display: 'flex'}}>
+                    <BathtubIcon style={{marginRight:"8px", color:"blue", inlineSize: 'max-content'}}/> Shower and Bathtub
+                  </Typography>
+                </Grid>
+              </div>
+              <Typography>Room Photos and Details</Typography>
             </div>
-            <Typography>
-              Room Photos and Details
-            </Typography>
           </div>
-        </div>
-        <div>
-          <Typography component="div">
-            Todays best offer
-          </Typography>
-          <Typography component="div">
-            from 899 / night
-          </Typography>
-          <Button variant="outlined" >Book Now</Button>
-        </div>
-      </Card>
-    ))}</>)
-}
+          <div>
+            <Typography component="div">Todays best offer</Typography>
+            <Typography component="div">from 899 / night</Typography>
+            <Button variant="outlined">Book Now</Button>
+          </div>
+        </Card>
+      ))}
+    </>
+  );
+};
 
 const GradientOpacityDiv = () => {
   const [isOpaque, setIsOpaque] = useState(false);
@@ -246,8 +262,10 @@ const GradientOpacityDiv = () => {
 
   const buttonStyle = {
     marginTop: "10px",
-    borderBottom: "2px solid #297cbb",
+    borderBottom: "1px solid #297cbb",
+    borderRadius: 0,
     color: "#297cbb",
+    marginBottom: "2%",
   };
 
   const handleCheveron = () => {
@@ -294,7 +312,20 @@ const GradientOpacityDiv = () => {
 };
 
 const Amenities = () => {
-  const newtemList = ["wifi", "wake-up call", "Bathrobes", "Fitness center", "Telephone", "Dry cleaning", "Mini bar", "Hair dryer", "High Chair", "Restaurant", "Air Cinditioning", "Slippers"]
+  const newtemList = [
+    "wifi",
+    "wake-up call",
+    "Bathrobes",
+    "Fitness center",
+    "Telephone",
+    "Dry cleaning",
+    "Mini bar",
+    "Hair dryer",
+    "High Chair",
+    "Restaurant",
+    "Air Cinditioning",
+    "Slippers",
+  ];
   return (
     <>
       <Typography gutterBottom variant="h5" component="div">
@@ -304,12 +335,12 @@ const Amenities = () => {
         {newtemList.map((item: string) => (
           <Grid xs={4}>
             <Typography gutterBottom>
-              <FitnessCenterIcon />{item}
+              <FitnessCenterIcon />
+              {item}
             </Typography>
           </Grid>
-
         ))}
       </Grid>
     </>
-  )
-}
+  );
+};
