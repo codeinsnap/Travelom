@@ -2,11 +2,11 @@
     margin-bottom: -3.5%;
 }
 
-
 .singleHotel-room-card {
     display: flex;
     margin-bottom: 4%;
     justify-content: space-between;
+    padding: 4%
 }
 
 .singleHotel-room-card-image {
@@ -34,22 +34,24 @@
 }
 
 .singleHotel-room-search-div{
-    margin-bottom:5%;
+    margin:15% 0;
+    
 }
 
 .hotel-location-container{
-    margin-left: 10.6%
+    margin-bottom: 2%
 }
 
 .hotel-location-container-wrapper{
     display: flex;
     margin-top: 5%;
+    margin-bottom:1%
 }
 
 .hotel-location-container-wrapper-text{
-    padding: 0.1% 2.6%;
+    padding: 0.1% 1.6%;
     margin-right:1%;
     border-radius: 5px;
-    font-size: 70%;
+    font-size: 100%;
     color: white
 }

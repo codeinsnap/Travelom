@@ -11,14 +11,14 @@ const BreadCrumb = (props: any) => {
     const renderBreadCrumb = () => {
         return data?.length > 0 ? data?.map((element: any) => {
             return (
-                <Button sx={{ color: "black" }} onClick={() => navigate(element.link)}>
+                <Button sx={{ color: "black" }} disabled={!element?.link} onClick={() => navigate(element?.link)}>
                     {element.title}
                 </Button>
             )
         }) : ''
     }
     return (
-        <Stack spacing={2} style={{marginLeft:"10%"}}>
+        <Stack spacing={2} style={{marginLeft:"7%"}}>
             <Breadcrumbs
                 separator={<NavigateNextIcon fontSize="small" />}
                 aria-label="breadcrumb"

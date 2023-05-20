@@ -37,8 +37,8 @@ const Carousel = (props: any) => {
   return (
     <>
       <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
-        pagination={{ clickable: true }}
+        modules={[Navigation, Scrollbar, A11y]}
+        // pagination={{ clickable: true }}
         spaceBetween={handleSpaceBetween(spaceBetween)}
         slidesPerView={handleslidesPerView(slidesPerView)}
         onSlideChange={onSlideChange}
