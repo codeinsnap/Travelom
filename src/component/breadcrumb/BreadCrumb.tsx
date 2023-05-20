@@ -11,7 +11,7 @@ const BreadCrumb = (props: any) => {
     const renderBreadCrumb = () => {
         return data?.length > 0 ? data?.map((element: any) => {
             return (
-                <Button sx={{ color: "black" }} onClick={() => navigate(element.link)}>
+                <Button sx={{ color: "black" }} disabled={!element?.link} onClick={() => navigate(element?.link)}>
                     {element.title}
                 </Button>
             )

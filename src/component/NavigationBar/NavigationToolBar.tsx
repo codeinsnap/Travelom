@@ -35,7 +35,7 @@ const NavigatinToolBar = (props: any) => {
         style={{
           display: "flex",
           alignItems: "center",
-          color: "black",
+          color:"#297cbb",
           width: "15%",
         }}
       >

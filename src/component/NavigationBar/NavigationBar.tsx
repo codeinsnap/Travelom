@@ -12,6 +12,8 @@ import MenuItem from "@mui/material/MenuItem";
 import "./navigation.css";
 import { useNavigate } from "react-router-dom";
 import NavigatinToolBar from "./NavigationToolBar";
+import NavigationSideBar from "./NavigationSideBar";
+
 
 const NavigationBar = () => {
   const colorType =
@@ -19,6 +21,7 @@ const NavigationBar = () => {
   const appBarColor =
     window.location.pathname === "/hotel-details" ? "white" : "transparent";
   const navigate = useNavigate();
+  const [open, setOpen] = useState(false);
 
   const [isVisible, setIsVisible] = useState(false);
 
@@ -51,9 +54,10 @@ const NavigationBar = () => {
       >
         <NavigatinToolBar navigate={navigate} />
       </AppBar>
-      <AppBar position="static" style={{ background: appBarColor }}>
+
+      <AppBar className="fullscreenNavabr" position="static" style={{ background: appBarColor, boxShadow:'none' }}>
         <Toolbar className="nav-container">
-          <MenuIcon className="nav-menu" />
+          <MenuIcon className="nav-menu" onClick={() => {setOpen(!open)}} />
           <div className="nav-left_container">
             <div className="nav-text-container">
               <Button style={{ marginRight: "2%", color: colorType }}>
@@ -95,10 +99,11 @@ const NavigationBar = () => {
           </div>
         </Toolbar>
         <div>
-          <hr color="gray" style={{ opacity: "0.3" }} />
+          <hr color="#b9b9b9" style={{ opacity: "0.2" }} />
         </div>
         <NavigatinToolBar navigate={navigate} />
       </AppBar>
+      <NavigationSideBar open={open} setOpen={setOpen}/>
     </Box>
   );
 };

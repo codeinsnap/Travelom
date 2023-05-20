@@ -36,7 +36,6 @@
 .appBar {
     transition: transform 01s !important;
     background-color: white;
-    padding: 1%
   }
 .appBarVisible {
     transform: translateY(0) !important
@@ -47,21 +46,10 @@
   }
 
 @media screen and (max-width: 600px) and (min-width: 370px) {
-
-    .right-child-container,
-    .nav-right_container,
-    .nav-text-container,
-    .nav-left_container {
-        display: none
+    .nav-container{
+        display: none;
     }
-
-    .nav-container {
-        display: flex;
-        justify-content: flex-end;
-        flex-wrap: wrap
-    }
-
-    .nav-menu {
-        display: block !important;
+    .fullscreenNavabr{
+        display:none;
     }
 }
