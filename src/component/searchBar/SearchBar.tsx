@@ -9,8 +9,10 @@ import "./searchbar.css";
 import TextField from "@mui/material/TextField";
 import Grid from "@mui/material/Grid";
 import SearchIcon from "@mui/icons-material/Search";
+import { useNavigate } from "react-router-dom";
 
 const SearchBar = () => {
+  const navigate = useNavigate()
   return (
     <Card className="search-card" style={{ padding: "1%" }}>
       <Grid container spacing={3} style={{
@@ -49,7 +51,7 @@ const SearchBar = () => {
           />
         </Grid>
         <Grid item xs={1}>
-          <Button variant="contained">
+          <Button variant="contained" onClick={() => navigate('/hotel-details')}>
             <SearchIcon /> Search
           </Button>
         </Grid>

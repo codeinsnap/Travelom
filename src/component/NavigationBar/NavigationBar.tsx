@@ -17,9 +17,9 @@ import NavigationSideBar from "./NavigationSideBar";
 
 const NavigationBar = () => {
   const colorType =
-    window.location.pathname === "/hotel-details" ? "#000000" : "inherit";
+    window.location.pathname === "/" ? "inherit" : "#000000";
   const appBarColor =
-    window.location.pathname === "/hotel-details" ? "white" : "transparent";
+    window.location.pathname === "/" ? "transparent" : "white";
   const navigate = useNavigate();
   const [open, setOpen] = useState(false);
 

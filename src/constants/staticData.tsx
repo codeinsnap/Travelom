@@ -6,7 +6,7 @@ import AspectRatioIcon from "@mui/icons-material/AspectRatio";
 
 export const NavigationBarbuttonsList = [
   { id: 1, title: "Home", link: "/" },
-  { id: 2, title: "Hotel", link: "/hotel-details" },
+  { id: 2, title: "Hotels", link: "/hotel-sidebar" },
   { id: 3, title: "About", link: "/about" },
   { id: 4, title: "Contact", link: "/contact" },
 ];
