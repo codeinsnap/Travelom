@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
+import ComingSoonpage from "../component/comingSoon/ComingSoonpage";
 
 const Contact = () => {
   return (
-    <div>Contact</div>
-  )
-}
+    <ComingSoonpage/>
+  );
+};
 
-export default Contact
+export default Contact;

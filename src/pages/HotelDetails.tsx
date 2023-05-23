@@ -202,7 +202,7 @@ const HotelDetails = () => {
                 variant="outlined"
                 style={{ padding: "6px 9px", borderRadius: "0px 4px 4px 0px", border:"1px solid #a864a8"}}
               >
-                <Typography style={{fontSize:"80%", inlineSize: 'max-content'}}>Free breakfast</Typography>
+                <Typography style={{fontSize:"80%", inlineSize: 'max-content', color:'#a864a8'}}>Free breakfast</Typography>
               </Button>
             </div>
           </div>
