@@ -32,7 +32,7 @@ function CustomStar(props) {
 const CustomCard = (props) => {
   const { cardData, cardImage, cardTextContent } = props;
   return (
-    <Card>
+    <Card className="custom_card_main">
       <CardContent sx={{ padding: 0 }}>
         <div className="imageicon">
           <CustomHeartIcon />

@@ -4,7 +4,7 @@ const Home = lazy(() => import("../pages/Home"))
 const Contact = lazy(() => import("../pages/Contact"))
 const SingleHotel = lazy(() => import("../pages/HotelDetails"))
 const About = lazy(() => import("../pages/About"))
-const HotelWithSearchFilter = lazy(() => import('../pages/HotelWithSearchFilter'))
+const HotelWithSearchFilter = lazy(() => import('../pages/hotelWithSearchFilter/HotelWithSearchFilter'))
 
 
 const Routes = [
