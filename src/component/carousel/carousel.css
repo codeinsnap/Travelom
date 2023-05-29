@@ -7,12 +7,12 @@
 .swiper-main{
   padding: 1%
 }
-.swiper-slide:hover{
+.swiper-main .swiper-slide:hover{
   box-shadow: 0px 0px 12px -2px rgb(121, 121, 121);
   margin-top: -2px;
 }
 
-.swiper-button-next{
+.swiper-main .swiper-button-next{
       background-color: white;
       padding: 1%;
       border-radius: 80px;
@@ -20,16 +20,16 @@
       height: 4%!important;
 }
 
-.swiper-button-prev{
+.swiper-main .swiper-button-prev{
   background-color: white;
   padding: 1%;
   border-radius: 80px;
   width: 1% !important;
   height: 4%!important;
 }
-.swiper-button-next::after{
+.swiper-main .swiper-button-next::after{
   font-size: 1.5rem !important;
 }
- .swiper-button-prev::after{
+.swiper-main .swiper-button-prev::after{
   font-size: 1.5rem !important;
 }

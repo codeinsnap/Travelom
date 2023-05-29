@@ -1,0 +1,8 @@
+.hotelListCardCarousel .swiper-button-next::after{
+    font-size: 1.5rem !important;
+    color: white
+}
+.hotelListCardCarousel .swiper-button-prev::after{
+    font-size: 1.5rem !important;
+    color: white
+  }
