@@ -1,34 +1,12 @@
 import React, { useState } from "react";
-import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import CustomCard from "../../component/card/CustomCard";
 import { Hotelslist } from "../../constants/staticData";
-import AcUnitIcon from "@mui/icons-material/AcUnit";
-import CallIcon from "@mui/icons-material/Call";
-import LunchDiningIcon from "@mui/icons-material/LunchDining";
-import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
-import LocalLaundryServiceIcon from "@mui/icons-material/LocalLaundryService";
-import WineBarIcon from "@mui/icons-material/WineBar";
-import ChairIcon from "@mui/icons-material/Chair";
-import SearchIcon from "@mui/icons-material/Search";
-import TextField from "@mui/material/TextField";
-import VerticalLine from "../../component/verticalLine/VerticalLine";
 import Card from "@mui/material/Card";
-import Button from "@mui/material/Button";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
-import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
-import AppsIcon from "@mui/icons-material/Apps";
 import {
   List,
   ListItem,
-  ListItemButton,
-  ListItemIcon,
-  ListItemText,
   Typography,
 } from "@mui/material";
-import FormatListBulletedIcon from "@mui/icons-material/FormatListBulleted";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
