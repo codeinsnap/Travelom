@@ -1,18 +1,17 @@
-import React, { Suspense, lazy } from "react"
-import ReactDOM from 'react-dom/client';
-import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from "react-router-dom"
-import { CircularProgress } from "@mui/material"
+import React, { Suspense, lazy } from "react";
+import ReactDOM from "react-dom/client";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter } from "react-router-dom";
+import { flashPage } from './component/flashPage'
 
-const LazyApp = lazy(() => import("./App"))
-
+const LazyApp = lazy(() => import("./App"));
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Suspense fallback={<CircularProgress />}>
+      <Suspense fallback={flashPage()}>
         <LazyApp />
       </Suspense>
     </BrowserRouter>

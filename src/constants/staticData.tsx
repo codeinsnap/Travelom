@@ -10,6 +10,7 @@ export const NavigationBarbuttonsList = [
   { id: 2, title: "Hotels", link: "/hotel-sidebar" },
   { id: 3, title: "About", link: "/about" },
   { id: 4, title: "Contact", link: "/contact" },
+  { id: 5, title: "Checkout", link: "/checkout" },
 ];
 
 export const SelectHotelRoomCard = [

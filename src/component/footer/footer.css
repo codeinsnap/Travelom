@@ -35,3 +35,16 @@
 .footer-subscribe-button{
     font-size: x-small !important;
 }
+
+.footer_content_container{
+    display: flex;
+    justify-content: center;
+    align-items: baseline
+}
+
+.footer_column_container{
+    display: flex;
+    justify-content: center;
+    align-items: baseline !important;
+    flex-direction: column;
+}
