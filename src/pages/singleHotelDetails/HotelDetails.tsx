@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import BreadCrumb from "../component/breadcrumb/BreadCrumb";
-import Carousel from "../component/carousel/Carousel";
-import hotelimages from "../assets/img/960x490/img7.jpg";
+import BreadCrumb from "../../component/breadcrumb/BreadCrumb";
+import Carousel from "../../component/carousel/Carousel";
+import hotelimages from "../../assets/img/960x490/img7.jpg";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
@@ -17,7 +17,7 @@ import {
   ListItemText,
   Typography,
 } from "@mui/material";
-import "../assets/css/hoteldetails.css";
+import "../../assets/css/hoteldetails.css";
 
 import AcUnitIcon from "@mui/icons-material/AcUnit";
 import CallIcon from "@mui/icons-material/Call";
@@ -28,10 +28,10 @@ import WineBarIcon from "@mui/icons-material/WineBar";
 import ChairIcon from "@mui/icons-material/Chair";
 import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
-import VerticalLine from "../component/verticalLine/VerticalLine";
+import VerticalLine from "../../component/verticalLine/VerticalLine";
 
 //Static Data for Room select card
-import { SelectHotelRoomCard } from "../constants/staticData";
+import { SelectHotelRoomCard } from "../../constants/staticData";
 
 const list = [
   {

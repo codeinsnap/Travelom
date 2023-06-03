@@ -2,10 +2,10 @@ import React, { lazy } from 'react'
 
 const Home = lazy(() => import("../pages/Home"))
 const Contact = lazy(() => import("../pages/Contact"))
-const SingleHotel = lazy(() => import("../pages/HotelDetails"))
+const SingleHotel = lazy(() => import("../pages/singleHotelDetails/HotelDetails"))
 const About = lazy(() => import("../pages/About"))
 const HotelWithSearchFilter = lazy(() => import('../pages/hotelWithSearchFilter/HotelWithSearchFilter'))
-
+const CheckoutPage = lazy(() => import("../pages/checkout"))
 
 const Routes = [
     {
@@ -27,6 +27,10 @@ const Routes = [
     {
         path:"/hotel-sidebar",
         element: <HotelWithSearchFilter/>
+    },
+    {
+        path:"/checkout",
+        element: <CheckoutPage/>
     }
     
 ]

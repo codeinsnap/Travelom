@@ -1,7 +1,8 @@
 .nav-container {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    min-height:auto
 }
 
 .nav-left_container {

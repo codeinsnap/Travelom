@@ -5,7 +5,7 @@ import mytravelicon from "../../assets/fonts/travelicon.svg";
 
 const ComingSoonpage = () => {
   return (
-    <Box sx={{ flexGrow: 1, paddingTop: "12%" }}>
+    <Box sx={{ flexGrow: 1 }}>
       <div
         style={{
           height: "60vh",

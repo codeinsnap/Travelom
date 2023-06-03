@@ -26,7 +26,8 @@ const NavigatinToolBar = (props: any) => {
       style={{
         display: "flex",
         justifyContent: "space-evenly",
-        paddingBottom: "1%",
+        paddingBottom: "0.5%",
+        paddingTop: "0.5%",
         flexWrap: "wrap",
       }}
     >
@@ -35,7 +36,7 @@ const NavigatinToolBar = (props: any) => {
         style={{
           display: "flex",
           alignItems: "center",
-          color:"#297cbb",
+          color: "#297cbb",
           width: "15%",
         }}
       >
@@ -46,9 +47,9 @@ const NavigatinToolBar = (props: any) => {
         />
         MyTravel
       </Typography>
-      <div style={{ display: "flex", marginLeft: "50%" }}>
+      <div style={{ display: "flex", marginLeft: "35%" }}>
         {NavigationBarbuttonsList.map((item: any) => (
-          <NavigationButton data={item} navigate={navigate} key={item.id}/>
+          <NavigationButton data={item} navigate={navigate} key={item.id} />
         ))}
       </div>
     </Toolbar>
