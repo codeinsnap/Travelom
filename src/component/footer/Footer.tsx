@@ -8,10 +8,11 @@ import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import CopyrightIcon from "@mui/icons-material/Copyright";
 import mytravelicon from "../../assets/fonts/travelicon.svg";
+import { Divider } from "@mui/material";
 const Footer = () => {
   return (
     <>
-      <hr color="#b9b9b9" style={{ opacity: "0.6" }} />
+      <Divider />
       <Grid container spacing={2.5} className="footer_content_container">
         <Grid item xs={2.5} className="footer_column_container">
           <Typography className="footer-title">Need My Travel Help?</Typography>
@@ -75,7 +76,7 @@ const Footer = () => {
           </div>
         </Grid>
       </Grid>
-      <hr color="#b9b9b9" style={{ opacity: "0.6" }} />
+      <Divider />
       <Grid
         container
         spacing={9}
@@ -130,7 +131,7 @@ const Footer = () => {
           </Select>
         </Grid>
       </Grid>
-      <hr color="#b9b9b9" style={{ opacity: "0.6" }} />
+      <Divider />
       <Typography className="footer-copyright-text">
         <CopyrightIcon fontSize="inherit" /> 2020 MyTravel. All rights reserved
       </Typography>
