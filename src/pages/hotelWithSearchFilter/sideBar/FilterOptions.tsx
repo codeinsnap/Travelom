@@ -1,11 +1,6 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
-import SearchIcon from "@mui/icons-material/Search";
-import TextField from "@mui/material/TextField";
-import Card from "@mui/material/Card";
 import Button from "@mui/material/Button";
-import AppsIcon from "@mui/icons-material/Apps";
 import {
   List,
   ListItemButton,
@@ -13,7 +8,6 @@ import {
   ListItemText,
   Typography,
 } from "@mui/material";
-import FormatListBulletedIcon from "@mui/icons-material/FormatListBulleted";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";

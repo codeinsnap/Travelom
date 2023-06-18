@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState}from "react";
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -11,13 +11,12 @@ import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
-import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import { Link } from "react-router-dom";
 
 const HotelSummary = () => {
-  const [expanded, setExpanded] = React.useState<string | false>(false);
+  const [expanded, setExpanded] = useState<string | false>(false);
 
   const handleChange =
     (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
@@ -64,11 +63,10 @@ const HotelSummary = () => {
         style={{
           display: "flex",
           flexDirection: "column",
-          alignItems: "flex-start",
           padding: "8%",
         }}
       >
-        <img src={summaryImg} />
+        <img src={summaryImg} alt={"Hotel Summary"} />
         <Typography style={{ margin: "4% 0%" }}>
           Park Avenue Baker Street London
         </Typography>

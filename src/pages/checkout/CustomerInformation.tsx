@@ -4,7 +4,7 @@ import MenuItem from "@mui/material/MenuItem";
 import TextField from "@mui/material/TextField";
 import React from "react";
 
-const CustomerInformation = () => {
+const CustomerInformation = ({ setCurrentStatus }: any) => {
   const inputSet = [
     {
       label: "First Name",
@@ -43,8 +43,18 @@ const CustomerInformation = () => {
     },
   ];
   return (
-    <div>
-      <Typography>Let us know who you are</Typography>
+    <div style={{
+      padding: "1rem 2rem 1rem",
+    }}>
+      <Typography
+        style={{
+          fontWeight: 500,
+          fontSize: "1.313rem",
+          color: "#3b444f",
+        }}
+      >
+        Let us know who you are
+      </Typography>
       <div
         style={{
           display: "flex",
@@ -65,19 +75,35 @@ const CustomerInformation = () => {
           </div>
         ))}
       </div>
-      <div style={{width:"50%"}}>
-        <Typography variant="h5" gutterBottom> Let us know </Typography>
+      <div style={{ width: "50%" }}>
+        <Typography variant="h5" gutterBottom>
+          Let us know
+        </Typography>
         <Typography gutterBottom>
           We'll let the property or host know when to expect you.
         </Typography>
         <HandleSelectDropDown inputdata={null} />
       </div>
-      <div style={{
-            display: "flex",
-            justifyContent: "flex-end",
-            marginRight:"2%"
-      }}>
-        <Button color="primary" variant="contained" style={{minWidth:"13.75rem", paddingBottom:"1rem", paddingTop:"1rem", fontSize:"1.15rem"}}> Next Page</Button>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "flex-end",
+          marginRight: "2%",
+        }}
+      >
+        <Button
+          color="primary"
+          variant="contained"
+          style={{
+            minWidth: "13.75rem",
+            paddingBottom: "1rem",
+            paddingTop: "1rem",
+            fontSize: "1.15rem",
+          }}
+          onClick={() => setCurrentStatus(2)}
+        >
+          Next Page
+        </Button>
       </div>
     </div>
   );
@@ -98,7 +124,12 @@ function HandleSelectDropDown({ inputdata }: any) {
         case "phoneInput":
           return (
             <>
-              <TextField fullWidth id="outlined-basic" variant="outlined" placeholder={filed.placeHolder}/>
+              <TextField
+                fullWidth
+                id="outlined-basic"
+                variant="outlined"
+                placeholder={filed.placeHolder}
+              />
             </>
           );
         case "dropdown":

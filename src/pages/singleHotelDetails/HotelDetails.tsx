@@ -18,18 +18,10 @@ import {
   Typography,
 } from "@mui/material";
 import "../../assets/css/hoteldetails.css";
-
-import AcUnitIcon from "@mui/icons-material/AcUnit";
-import CallIcon from "@mui/icons-material/Call";
-import LunchDiningIcon from "@mui/icons-material/LunchDining";
 import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
-import LocalLaundryServiceIcon from "@mui/icons-material/LocalLaundryService";
-import WineBarIcon from "@mui/icons-material/WineBar";
-import ChairIcon from "@mui/icons-material/Chair";
 import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
 import VerticalLine from "../../component/verticalLine/VerticalLine";
-
 //Static Data for Room select card
 import { SelectHotelRoomCard } from "../../constants/staticData";
 
