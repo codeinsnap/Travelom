@@ -36,7 +36,7 @@
 
 .appBar {
     transition: transform 01s !important;
-    background-color: white;
+    background-color: white !important;
   }
 .appBarVisible {
     transform: translateY(0) !important
