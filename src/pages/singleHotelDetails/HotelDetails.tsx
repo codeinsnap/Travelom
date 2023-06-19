@@ -94,8 +94,7 @@ const list = [
 
 const HotelDetails = () => {
   return (
-    <Box className="hoteldetails-main" sx={{ flexGrow: 1, paddingTop: "12%" }}>
-      <hr color="#b9b9b9" style={{ opacity: "0.2" }} />
+    <Box className="hoteldetails-main" sx={{ flexGrow: 1 }}>
       <BreadCrumb data={[{ title: "Home", link: "/" }, { title: "Hotels" }]} />
       <hr color="#b9b9b9" style={{ opacity: "0.2" }} />
 
